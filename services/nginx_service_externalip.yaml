@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-proxy
+spec:
+  selector:
+    app: nginx
+  externalIPs:
+  - 192.168.99.104
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
