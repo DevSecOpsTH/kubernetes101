@@ -1,0 +1,7 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: devops
+spec:
+ type: ExternalName
+ externalName: devops.in.th
